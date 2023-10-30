@@ -1,259 +1,159 @@
 # OS EX.4-LINUX-COMMANDS
-
 ## AIM:
-To study and execute the basis of UNIX commands
+To practice some linux operating system commands.
 
-## LINUX COMMANDS :
-~~~COMMAND1: ls - List Files and Directories
+## COMMAND: pwd Command
+The pwd command is used to display the location of the current working directory.
 
-Syntax: 
-       ls [options] [directory]
-Code:
-     ls -l /home/user
-Output: 
-       List of files and directories in /home/user with details.
-~~~
-~~~
-Command 2 : cd - Change Directory
+## Syntax:
+➔ pwd
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/42eb669c-d95a-48a1-adb7-91fc5412e67c)
 
-Syntax: 
-	cd [directory]
-Code: 
-	cd /var/www
-Output: 
-	Change to the /var/www directory.
-~~~
-~~~
-Command 3 : pwd - Print Working Directory
+## COMMAND: mkdir Command
+The mkdir command is used to create a new directory under any directory
 
-Syntax: 
-	pwd
-Code: 
-	pwd
-Output: 
-	/home/user (prints the current working directory).
-~~~
-~~~
-Command 4 : mkdir - Create Directory
+## Syntax :
+➔ mkdir
 
-Syntax: 
-	mkdir [directory]
-Code: 
-	mkdir my_directory
-Output:	
-	Creates a new directory named my_directory.
-~~~
-~~~
-Command 5 : touch - Create Empty File
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/8ff79742-2119-4406-b9b9-126fc4e80e84)
 
-Syntax: 
-	touch [filename]
-Code: 
-	touch newfile.txt
-Output: 
-	Creates a new empty file named newfile.txt.
-~~~
-~~~
-Command 6 : cp - Copy Files and Directories
+## COMMAND:ls Command
+The ls command is used to display a list of content of a directory
 
-Syntax: 
-	cp [options] source destination
-Code: 
-	cp file.txt /backup/
-Output: 
-	Copies file.txt to the /backup/ directory.
-~~~
-~~~
-Command 7 : mv - Move/Rename Files and Directories
+## Syntax:
+➔ ls
 
-Syntax: 
-	mv [options] source destination
-Code: 
-	mv oldfile.txt newfile.txt
-Output: 
-	Renames oldfile.txt to newfile.txt.
-~~~
-~~~
-Command 8 : rm - Remove Files and Directories
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/0ed68ad9-c469-4f08-8568-ed886852b9ab)
 
-Syntax: 
-	rm [options] [file/directory]
-Code: 
-	rm file.txt
-Output: 
-	Deletes file.txt.
-~~~
-~~~
-Command 9 : cat - Concatenate and Display File Content
+## COMMAND: cd Command
+The cd command is used to change the current directory.
 
-Syntax: 
-	cat [filename]
-Code: 
-	cat file.txt
-Output: 
-	Displays the content of file.txt.
-~~~
-~~~
-Command 10 : more - View File Content Page by Page
+## Syntax:
+cd
 
-Syntax: 
-	more [filename]
-Code: 
-	more longfile.txt
-Output: 
-	Allows you to view the content of longfile.txt one page at a time.
-~~~
-~~~
-Command 11 : less - View File Content with Navigation
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/ee1ee704-fbc7-48e7-8484-9cef17bc8f89)
 
-Syntax: 
-	less [filename]
-Code: 
-	less largefile.txt
-Output: 
-	Displays largefile.txt with navigation capabilities.
-~~~
-~~~
-Command 12 : head - Display Top Lines of a File
+## COMMAND:touch Command
+The touch command is used to create empty files. We can create multiple empty files by executing it once.
 
-Syntax: 
-	head [options] [filename]
-Code: 
-	head -n 5 file.txt
-Output: 
-	Shows the first 5 lines of file.txt.
-~~~
-~~~
-Command 13 : tail - Display Bottom Lines of a File
+## Syntax
+touch ....
 
-Syntax: 
-	tail [options] [filename]
-Code: 
-	tail -n 10 file.log
-Output: 
-	Shows the last 10 lines of file.log.
-~~~
-~~~
-Command 14 : grep - Search Text in Files
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/5e5a9e13-ca04-463c-9481-f2bcad2ef884)
 
-Syntax: 
-	grep [options] 'pattern' [file(s)]
-Code: 
-	grep 'keyword' file.txt
-Output: 
-	Lists lines containing 'keyword' in file.txt.
-~~~
-~~~
-Command 15 : find - Search for Files and Directories
+## COMMAND:rm Command
+The rm command is used to remove a file
 
-Syntax:
-	find [path] [expression]
-Code: 
-	find /home/user -name '*.txt'
-Output: 
-	Finds all .txt files under /home/user.
-~~~
-~~~
-Command 16 : chmod - Change File Permissions
+## Syntax:
+rm
 
-Syntax: 
-	chmod [options] permissions file(s)
-Code: 
-	chmod 644 file.txt
-Output: 
-	Sets read and write permissions for the owner and read-only permissions for others on file.txt.
-~~~
-~~~
-Command 17 : chown - Change File Ownership
+## OUTPUT:
 
-Syntax: 
-	chown [options] user:group file(s)
-Code: 
-	chown user:group file.txt
-Output: 
-	Changes the owner and group of file.txt.
-~~~
-~~~
-Command 18 : tar - Archive and Compress Files
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/5d1bf67a-267c-48ff-89bd-eb5706561c25)
+## COMMAND:cp Command
+The cp command is used to copy a file or directory.
 
-Syntax: 
-	tar [options] [file(s)]
-Code: 
-	tar -cvzf archive.tar.gz dir/
-Output: 
-	Creates a compressed archive of the dir/ directory.
-~~~
-~~~
-Command 19 : df - Display Disk Space Usage
+## Syntax:
+To copy in the same directory: cp
 
-Syntax: 
-	df [options] [filesystem(s)]
-Code: 
-	df -h
-Output: 
-	Shows disk space usage in a human-readable format.
-~~~
-~~~
-Command 20 : du - Display Directory Space Usage
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/8f0b40c8-4a14-4d18-b694-acb38d4127c3)
 
-Syntax: 
-	du [options] [directory]
-Code: 
-	du -sh /var
-Output: 
-	Displays the total size of the /var directory in a human-readable format.
-~~~
-~~~
-Command 21 : ps - Display Process Status
+## COMMAND:head Command
+The head command is used to display the content of a file. It displays the first 10 lines of a file.
 
-Syntax: 
-	ps [options]
-Code: 
-	ps aux
-Output: 
-	Lists running processes with details.
-~~~
-~~~
-Command 22 : kill - Terminate Processes
+## Syntax:
+head
 
-Syntax: 
-	kill [signal] [PID]
-Code: 
-	kill -9 1234
-Output: 
-	Sends a SIGKILL signal to process with PID 1234.
-~~~
-~~~
-Command 23 : ssh - Secure Shell
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/4e4d3a40-c63a-4853-aa4b-49eea9dd420e)
 
-Syntax: 
-	ssh [user@]hostname
-Code: 
-	ssh user@remote-server
-Output: 
-	Establishes a secure remote connection to remote-server.
-~~~
-~~~
-Command 24 : scp - Securely Copy Files Over SSH
+## COMMAND: tac Command
+The tac command is the reverse of cat command, as its name specified. It displays the file content in reverse order (from the last line).
 
-Syntax:
-	scp [options] source destination
-Code: 
-	scp file.txt user@remote-server:/path/
-Output: 
-	Copies file.txt to a remote server over SSH.
-~~~
-~~~
-Command 25 : wget - Download Files from the Internet
+## Syntax:
+tac
 
-Syntax: 
-	wget [options] [URL]
-Code: 
-	wget https://example.com/file.zip
-Output: 
-	Downloads file.zip from the specified URL.
-~~~
-## Result:
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/4bb380f9-eac1-451e-87e5-8be29d96abf5)
 
-Thus basis of UNIX commands are studied and executed.
+## COMMAND:su Command
+The su command provides administrative access to another user. In other words, it allows access of the Linux shell to another user.
 
+## Syntax:
+su
+
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/91157c73-774a-48f8-a295-aed50b5a8e19)
+
+## COMMAND:useradd Command
+The useradd command is used to add or remove a user on a Linux server.
+
+## Syntax:
+useradd username
+
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/6b3e29ca-8449-4293-b64a-1c7273534a47)
+
+## COMMAND:passwd Command
+The passwd command is used to create and change the password for a user.
+
+## Syntax:
+passwd
+
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/108e0ca6-9fc7-41e6-96d5-62ca53ff147c)
+
+## COMMAND:grep Command
+The grep is the most powerful and used filter in a Linux system. The 'grep' stands for "global regular expression print." It is useful for searching the content from a file. Generally, it is used with the pipe.
+
+## Syntax:
+command | grep
+
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/f026c44c-ad1a-466c-8fe6-77e300cb5afb)
+
+## COMMAND:comm Command
+The 'comm' command is used to compare two files or streams. By default, it displays three columns, first displays non-matching items of the first file, second indicates the non-matching item of the second file, and the third column displays the matching items of both files.
+
+## Syntax:
+comm
+
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/cc10c6bc-801e-4c35-9a89-fe87a9721ffb)
+
+## COMMAND:find Command
+The find command is used to find a particular file within a directory. It also supports various options to find a file such as byname, by type, by date, and more. The following symbols are used after the find command: (.) : For current directory name (/) : For root
+
+## Syntax:
+find . -name "*.pdf"
+
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/4d546017-17c1-4da5-8158-203cb97c538d)
+
+## COMMAND:cal Command
+The cal command is used to display the current month's calendar with the current date highlighted.
+
+## Syntax:
+cal
+
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/c492e364-f199-4ebd-9fea-9c1071fc8ccf)
+
+## COMMAND:ip Command
+Linux ip command is an updated version of the ipconfig command. It is used to assign an IP address, initialize an interface, disable an interface.
+
+## Syntax:
+ip a or ip addr
+
+## OUTPUT:
+![image](https://github.com/Niroshassithanathan/EX.4-LINUX-COMMANDS/assets/121418437/141991ab-6b6d-41b1-847a-991106397a48)
+
+## RESULT:
+
+The some of the linux operating system commands are successfully excuted.
